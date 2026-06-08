@@ -1,0 +1,13 @@
+[config]
+model = "gpt-4o-mini"        # cheapest, fast (~$0.01-0.03 per PR)
+# model = "gpt-4o"           # smarter but ~5x more expensive
+
+[pr_reviewer]
+require_security_review = true
+require_tests = true
+num_code_suggestions = 3
+focus_only_on_problems = true
+
+[pr_description]
+publish_labels = true
+generate_ai_title = true
