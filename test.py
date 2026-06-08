@@ -34,7 +34,7 @@ def get_weather(location: str, unit: str) -> str:
     # Mock response
     return json.dumps({
         "location": location,
-        "temperature": 22.5 if unit == "celsius" else 72.5,
+        "temperature": 22.5
         "condition": "Sunny and clear",
         "unit": unit
     })
